@@ -1,0 +1,9 @@
+Simple money.pl client for grabbing commodity and currency pairs prices e.g. Gold, Silver or USD/PLN.
+
+Example usage:
+#!/usr/bin/env python
+
+from money_pl import CurrencyMoneyClient
+
+client = CurrencyMoneyClient("http://www.money.pl/pieniadze/forex/waluty/forex,usdpln.html") # grabs USD/PLN pair value
+print client.get_price() # prints out current value for USD/PLN pair.
